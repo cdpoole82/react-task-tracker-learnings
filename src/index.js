@@ -9,7 +9,10 @@ ReactDOM.render(
     <App />
   </React.StrictMode>,
   document.getElementById('root')
-);
+);//this tells React to take our App.js and render it inside the Div=Root tag on the base index.html page
+//App.js is the 'Root Component' of the structure
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
