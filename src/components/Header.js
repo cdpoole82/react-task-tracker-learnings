@@ -4,16 +4,13 @@ import Button from './Button'
 /* const date = Date();
 <h4>Date/Time:{date}</h4> */
 
-const Header = ({title}) => {
-    //passing this function in as a property to the button component
-    const onClick = () => {
-        console.log('Click')
-    }
-    
+const Header = ({title, onAdd, showAdd}) => {
+        
     return(
         <header className='header'>
             <h1>{title}</h1>
-            <Button color='green' text='Add+' onClick={onClick} />
+            <Button color={showAdd ? 'red' : 'green'} text={showAdd ? 'Close' : 'Add'}
+            onClick={onAdd} />
         </header>
                 
     )
